@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ARÔME BLANC | 프리미엄 핸드크래프트 석고방향제 아틀리에</title>
+    <meta name="description" content="공간을 채우는 순백의 감성과 은은한 자연의 향. 프리미엄 핸드크래프트 석고방향제 아틀리에 라롬 블랑(L'ARÔME BLANC)">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <aside class="announcement-bar">
+        <div class="container announce-flex">
+            <span>✨ 2026 스프링 리미티드 컬렉션 런칭 | 신규 가입 시 <strong>10% 웰컴 쿠폰</strong> & 전 상품 무료 선물 포장</span>
+        </div>
+    </aside>
+
+    <!-- Header Navigation -->
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <nav class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="#categories">향기 카테고리</a></li>
+                    <li><a href="#bestsellers">베스트셀러</a></li>
+                    <li><a href="#story">아틀리에 이야기</a></li>
+                    <li><a href="#reviews">고객 리뷰</a></li>
+                    <li><a href="#guide">센트 & 쇼핑 가이드</a></li>
+                </ul>
+            </nav>
+
+            <div class="logo-area">
+                <a href="#" class="brand-logo">
+                    <span class="logo-en">L'ARÔME BLANC</span>
+                    <span class="logo-sub">ATELIER DE PARFUM</span>
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <button class="icon-btn quiz-btn-top" id="scentFinderBtn" title="나만의 향기 찾기">
+                    <i data-lucide="sparkles"></i>
+                    <span class="btn-text">센트 퀴즈</span>
+                </button>
+                <button class="icon-btn wishlist-trigger" id="wishlistBtn" title="위시리스트">
+                    <i data-lucide="heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="icon-btn cart-trigger" id="cartBtn" title="장바구니">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <span class="drawer-logo">L'ARÔME BLANC</span>
+            <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="닫기">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul class="drawer-nav">
+            <li><a href="#categories" class="drawer-link">향기 카테고리</a></li>
+            <li><a href="#bestsellers" class="drawer-link">베스트셀러</a></li>
+            <li><a href="#story" class="drawer-link">아틀리에 이야기</a></li>
+            <li><a href="#reviews" class="drawer-link">포토 리뷰</a></li>
+            <li><a href="#guide" class="drawer-link">사용 & 쇼핑 가이드</a></li>
+            <li><button class="drawer-quiz-btn" id="drawerQuizBtn"><i data-lucide="sparkles"></i> 나만의 향기 찾기 퀴즈</button></li>
+        </ul>
+        <div class="drawer-footer">
+            <p class="cs-phone">02-789-0123</p>
+            <p class="cs-hours">MON-FRI 10:00 - 18:00 (LUNCH 12:00-13:00)</p>
+            <div class="drawer-sns">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="bookmark"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <main>
+        <!-- 1. Hero Banner Section -->
+        <section class="hero-section">
+            <div class="hero-bg-container">
+                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=2000&auto=format&fit=crop" 
+                     alt="석고방향제와 자연광 오브제" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <span class="hero-badge">HANDCRAFTED PLASTER DIFFUSER</span>
+                <h1 class="hero-title">
+                    공간을 채우는 순백의 감성,<br>
+                    그리고 <em>은은한 향기</em>
+                </h1>
+                <p class="hero-desc">
+                    자연에서 온 순수한 석고와 최상급 에센셜 오일이 빚어낸 따뜻한 쉼.<br>
+                    오늘 당신의 일상에 잔잔한 여운을 선물해 보세요.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#bestsellers" class="btn btn-primary">베스트 컬렉션 쇼핑하기</a>
+                    <button class="btn btn-outline" id="heroQuizBtn">
+                        <i data-lucide="sparkles"></i> 1분 맞춤 향기 퀴즈
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span>SCROLL DOWN</span>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Highlight Strip -->
+        <section class="value-strip">
+            <div class="container">
+                <div class="value-grid">
+                    <div class="value-item">
+                        <div class="val-icon"><i data-lucide="feather"></i></div>
+                        <div class="val-text">
+                            <h4>최고급 덴탈 등급 석고</h4>
+                            <p>가루 날림 없이 매끄럽고 단단한 순백의 표면</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="val-icon"><i data-lucide="sparkles"></i></div>
+                        <div class="val-text">
+                            <h4>IFRA 인증 파인 프래그런스</h4>
+                            <p>전문 조향사가 완성한 안전하고 고급스러운 향조</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="val-icon"><i data-lucide="gift"></i></div>
+                        <div class="val-text">
+                            <h4>시그니처 선물 패키징</h4>
+                            <p>친환경 린넨 & 왁스 실링의 감성 패키지 무료 제공</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="val-icon"><i data-lucide="shield-check"></i></div>
+                        <div class="val-text">
+                            <h4>KCL 안전기준 적합 승인</h4>
+                            <p>유해 물질 불검출로 온 가족이 안심하는 힐링</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Brand Story Section -->
+        <section class="brand-story-section" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-visual">
+                        <div class="img-wrapper main-img">
+                            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=1200&auto=format&fit=crop" 
+                                 alt="석고 반죽 및 수제 공정 연출">
+                        </div>
+                        <div class="img-wrapper sub-img">
+                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800&auto=format&fit=crop" 
+                                 alt="에센셜 오일과 스포이드 연출">
+                        </div>
+                        <div class="experience-card">
+                            <span class="num">72hr</span>
+                            <span class="lbl">저온 자연 건조 공정</span>
+                        </div>
+                    </div>
+
+                    <div class="story-content">
+                        <span class="section-tag">BRAND STORY</span>
+                        <h2 class="section-title">
+                            시간을 들여 정성으로 빚는<br>
+                            <em>라롬 블랑의 진심</em>
+                        </h2>
+                        <p class="story-paragraph">
+                            석고는 미세한 기공을 통해 향을 서서히 머금고,<br>
+                            가장 편안한 속도로 공기 중에 향기를 피워 올립니다.
+                        </p>
+                        <p class="story-paragraph">
+                            라롬 블랑은 화학적 가공을 배제하고, 자연에서 온 순수한 석고 가루를 한 점의 기포도 없이 섬세하게 부어 만듭니다. 72시간 동안 천천히 자연 건조되어 견고해진 오브제 위에 프랑스 그라스(Grasse)산 최고급 프래그런스 오일을 결합합니다.
+                        </p>
+                        
+                        <div class="story-features">
+                            <div class="s-feat">
+                                <span class="feat-bullet">01</span>
+                                <div>
+                                    <h5>미세 기공 발향 테크놀로지</h5>
+                                    <p>석고 내부의 나노 에어포켓이 향 분자를 일정하고 잔잔하게 분산</p>
+                                </div>
+                            </div>
+                            <div class="s-feat">
+                                <span class="feat-bullet">02</span>
+                                <div>
+                                    <h5>반영구적 리필 사용</h5>
+                                    <p>오일을 2~3방울 떨어뜨려 평생 간직하는 감성 인테리어 오브제</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story-action">
+                            <a href="#guide" class="btn btn-dark">석고 케어 & 제작 가이드 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Fragrance & Style Category Section -->
+        <section class="category-section" id="categories">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">FRAGRANCE MOOD</span>
+                    <h2 class="section-title">당신의 취향을 닮은 <em>네 가지 향기</em></h2>
+                    <p class="section-subtitle">공간의 무드를 바꾸는 감각적인 시그니처 향조와 오브제 라인업을 만나보세요.</p>
+                </div>
+
+                <div class="category-grid">
+                    <!-- Cat 1 -->
+                    <div class="category-card" data-category="floral" onclick="filterProducts('floral')">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=800&auto=format&fit=crop" alt="플로럴 가든 향">
+                            <div class="cat-badge">FLORAL & GARDEN</div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>01. 플로럴 & 화이트 가든</h3>
+                            <p>이슬 머금은 튜베로즈와 순백의 은방울꽃이 전하는 우아한 설렘</p>
+                            <span class="scent-notes">Notes: 백합 · 작약 · 화이트 머스크</span>
+                            <button class="cat-explore-btn">컬렉션 보기 <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cat 2 -->
+                    <div class="category-card" data-category="woody" onclick="filterProducts('woody')">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=800&auto=format&fit=crop" alt="우디 앤 포레스트 향">
+                            <div class="cat-badge">WOODY & FOREST</div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>02. 우디 & 딥 포레스트</h3>
+                            <p>안개 낀 편백나무 숲과 묵직한 샌달우드가 주는 깊은 내면의 휴식</p>
+                            <span class="scent-notes">Notes: 시더우드 · 베티버 · 샌달우드</span>
+                            <button class="cat-explore-btn">컬렉션 보기 <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cat 3 -->
+                    <div class="category-card" data-category="citrus" onclick="filterProducts('citrus')">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?q=80&w=800&auto=format&fit=crop" alt="시트러스 앤 허벌 향">
+                            <div class="cat-badge">CITRUS & HERB</div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>03. 시트러스 & 바질 허브</h3>
+                            <p>지중해의 햇살을 받은 베르가못과 싱그러운 바질이 주는 활기찬 리프레시</p>
+                            <span class="scent-notes">Notes: 베르가못 · 라임 · 프레시 바질</span>
+                            <button class="cat-explore-btn">컬렉션 보기 <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cat 4 -->
+                    <div class="category-card" data-category="object" onclick="filterProducts('object')">
+                        <div class="cat-img-box">
+                            <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=800&auto=format&fit=crop" alt="스컬프쳐 오브제">
+                            <div class="cat-badge">SCULPTURE & ART</div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>04. 스컬프쳐 & 오브제 아트</h3>
+                            <p>조각 작품 같은 실루엣으로 공간의 품격을 높이는 인테리어 석고 타블렛</p>
+                            <span class="scent-notes">Design: 클래식 토르소 · 아치 릴리프</span>
+                            <button class="cat-explore-btn">컬렉션 보기 <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Best Sellers & Shop Section -->
+        <section class="shop-section" id="bestsellers">
+            <div class="container">
+                <div class="shop-header">
+                    <div>
+                        <span class="section-tag">BEST COLLECTION</span>
+                        <h2 class="section-title">가장 사랑받는 <em>시그니처 석고방향제</em></h2>
+                        <p class="section-subtitle">라롬 블랑의 아이덴티티가 깃든 인기 베스트셀러</p>
+                    </div>
+
+                    <!-- Filter Tabs -->
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">전체보기</button>
+                        <button class="filter-tab" data-filter="floral">플로럴</button>
+                        <button class="filter-tab" data-filter="woody">우디</button>
+                        <button class="filter-tab" data-filter="citrus">시트러스</button>
+                        <button class="filter-tab" data-filter="object">오브제 아트</button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Product Cards will be dynamically rendered & hydrated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Banner: Scent Finder Quiz CTA -->
+        <section class="quiz-banner-section">
+            <div class="container">
+                <div class="quiz-banner-box">
+                    <div class="quiz-text-side">
+                        <span class="sub-pill"><i data-lucide="compass"></i> SCENT RECOMMENDATION</span>
+                        <h2>어떤 향기와 형태가 당신에게 어울릴까요?</h2>
+                        <p>간단한 3가지 질문으로 나만의 맞춤 석고방향제와 공간 스타일링 팁을 추천해 드립니다.</p>
+                        <button class="btn btn-light" id="openQuizBtn">
+                            <i data-lucide="sparkles"></i> 1분 맞춤 향기 퀴즈 시작하기
+                        </button>
+                    </div>
+                    <div class="quiz-visual-side">
+                        <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=800&auto=format&fit=crop" alt="석고방향제 오브제">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Customer Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">REAL REVIEWS</span>
+                    <h2 class="section-title">고객들의 <em>생생한 향기 이야기</em></h2>
+                    <div class="rating-overview">
+                        <div class="stars">
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                            <i data-lucide="star" class="fill"></i>
+                        </div>
+                        <span class="score">4.98 / 5.0</span>
+                        <span class="count">(1,420개의 실사용 포토 후기)</span>
+                    </div>
+                </div>
+
+                <div class="reviews-grid" id="reviewsGrid">
+                    <!-- Reviews will be rendered by JS -->
+                </div>
+
+                <!-- Instagram Social Showcase -->
+                <div class="insta-showcase">
+                    <div class="insta-header">
+                        <i data-lucide="instagram"></i>
+                        <span>Instagram <strong>@laromeblanc_official</strong></span>
+                        <p>#라롬블랑 #석고방향제 태그와 함께 공간을 공유해 주세요</p>
+                    </div>
+                    <div class="insta-grid">
+                        <div class="insta-item"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=400&auto=format&fit=crop" alt="인스타그램 후기 1"><div class="insta-hover"><i data-lucide="instagram"></i></div></div>
+                        <div class="insta-item"><img src="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?q=80&w=400&auto=format&fit=crop" alt="인스타그램 후기 2"><div class="insta-hover"><i data-lucide="instagram"></i></div></div>
+                        <div class="insta-item"><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=400&auto=format&fit=crop" alt="인스타그램 후기 3"><div class="insta-hover"><i data-lucide="instagram"></i></div></div>
+                        <div class="insta-item"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=400&auto=format&fit=crop" alt="인스타그램 후기 4"><div class="insta-hover"><i data-lucide="instagram"></i></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Shopping & Scent Care Guide Section -->
+        <section class="guide-section" id="guide">
+            <div class="container">
+                <div class="guide-wrapper">
+                    <div class="guide-info-side">
+                        <span class="section-tag">CARE & SHOPPING GUIDE</span>
+                        <h2 class="section-title">오래도록 아름답게,<br><em>석고방향제 가이드</em></h2>
+                        <p class="guide-desc">라롬 블랑의 제품을 가장 향기롭고 풍성하게 즐기는 방법과 구매 안내입니다.</p>
+                        
+                        <div class="guide-steps">
+                            <div class="g-step">
+                                <div class="step-num">01</div>
+                                <div class="step-text">
+                                    <h4>향 오일 충전법</h4>
+                                    <p>향이 옅어졌을 때 제품의 뒷면이나 눈에 띄지 않는 곳에 리필 오일을 2~3방울 떨어뜨려 흡수시켜 주세요.</p>
+                                </div>
+                            </div>
+                            <div class="g-step">
+                                <div class="step-num">02</div>
+                                <div class="step-text">
+                                    <h4>최적의 배치 공간</h4>
+                                    <p>바람이 통하는 창가, 침대 헤드, 서재 책상, 차량 송풍구 등에 거치하시면 은은한 공기 순환과 함께 발향력이 극대화됩니다.</p>
+                                </div>
+                            </div>
+                            <div class="g-step">
+                                <div class="step-num">03</div>
+                                <div class="step-text">
+                                    <h4>파손 방지 및 보관</h4>
+                                    <p>고강도 석고이나 강한 충격 시 파손될 수 있으니 평평한 곳에 거치하거나 전용 받침대를 사용해 주세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Accordion -->
+                    <div class="faq-side">
+                        <h3 class="faq-heading">자주 묻는 질문 (FAQ)</h3>
+                        <div class="accordion">
+                            <div class="acc-item active">
+                                <button class="acc-btn">
+                                    <span>발향 기간은 얼마나 지속되나요?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="acc-body">
+                                    <p>초기 수령 시 약 1~2개월 동안 풍부하게 향이 지속됩니다. 이후 동봉된 리필 프래그런스 오일(10ml)을 주기적으로 도포하시면 반영구적으로 사용하실 수 있습니다.</p>
+                                </div>
+                            </div>
+
+                            <div class="acc-item">
+                                <button class="acc-btn">
+                                    <span>선물 포장은 어떻게 구성되나요?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="acc-body">
+                                    <p>모든 주문 상품은 시그니처 샌드 하드박스, 친환경 린넨 파우치, 핸드메이드 왁스 실링 스탬프, 메시지 카드가 포함된 정성스러운 기프트 패키지로 안전하게 포장되어 발송됩니다.</p>
+                                </div>
+                            </div>
+
+                            <div class="acc-item">
+                                <button class="acc-btn">
+                                    <span>배송 기간 및 배송비는 어떻게 되나요?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="acc-body">
+                                    <p>주문 후 핸드메이드로 정성껏 제작 및 건조를 거쳐 영업일 기준 1~3일 이내 출고됩니다. 50,000원 이상 구매 시 무료 배송(기본 배송비 3,000원) 혜택이 적용됩니다.</p>
+                                </div>
+                            </div>
+
+                            <div class="acc-item">
+                                <button class="acc-btn">
+                                    <span>교환 및 환불 규정은 어떻게 되나요?</span>
+                                    <i data-lucide="chevron-down"></i>
+                                </button>
+                                <div class="acc-body">
+                                    <p>핸드메이드 맞춤 제작 특성상 단순 변심에 의한 반품은 수령 후 7일 이내 미개봉 상태에서 가능합니다. 배송 중 파손이나 제품 불량의 경우 100% 무상 재발송 및 환불을 신속히 도와드립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-card">
+                    <span class="sub-pill">NEWSLETTER</span>
+                    <h2>라롬 블랑의 향기로운 소식을 받아보세요</h2>
+                    <p>새로운 컬렉션 출시 소식과 회원 전용 <strong>10% 할인 시크릿 쿠폰</strong>을 즉시 보내드립니다.</p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+                        <div class="input-wrap">
+                            <i data-lucide="mail"></i>
+                            <input type="email" id="newsEmail" placeholder="이메일 주소를 입력해 주세요" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">쿠폰 받고 구독하기</button>
+                    </form>
+                    <span class="form-notice">스팸 메일은 절대 보내지 않으며 언제든 구독 취소 가능합니다.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="f-logo">L'ARÔME BLANC</span>
+                    <p class="f-slogan">당신의 공간에 순백의 감성과 은은한 휴식을 채우는 핸드크래프트 석고 아틀리에</p>
+                    <div class="f-sns">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        <a href="#" aria-label="Kakao"><i data-lucide="message-circle"></i></a>
+                        <a href="#" aria-label="Pinterest"><i data-lucide="bookmark"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>SHOPPING</h4>
+                    <ul>
+                        <li><a href="#bestsellers">베스트 컬렉션</a></li>
+                        <li><a href="#categories">향기별 카테고리</a></li>
+                        <li><a href="#guide">오일 리필 & 부자재</a></li>
+                        <li><a href="#guide">기프트 세트</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>ABOUT</h4>
+                    <ul>
+                        <li><a href="#story">아틀리에 스토리</a></li>
+                        <li><a href="#reviews">고객 후기</a></li>
+                        <li><a href="#guide">석고 케어 가이드</a></li>
+                        <li><a href="#">B2B 대량/답례품 문의</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-cs-col">
+                    <h4>CUSTOMER CARE</h4>
+                    <p class="cs-number">1588-0924</p>
+                    <p class="cs-time">평일 10:00 - 18:00 (점심 12:30 - 13:30)<br>주말 및 공휴일 휴무</p>
+                    <a href="mailto:contact@laromeblanc.com" class="cs-mail"><i data-lucide="mail"></i> contact@laromeblanc.com</a>
+                    <button class="btn-kakao-cs"><i data-lucide="message-square"></i> 카카오톡 실시간 상담</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="company-info">
+                    <p>상호명: (주)라롬블랑 아틀리에 | 대표자: 김향기 | 사업자등록번호: 123-45-67890 | 통신판매업신고: 제2026-서울강남-01234호</p>
+                    <p>주소: 서울특별시 강남구 압구정로 18길 42 라롬빌딩 3F | 개인정보보호책임자: 이정온</p>
+                    <p class="copyright">© 2026 L'ARÔME BLANC. All Rights Reserved. Designed for Pure Aesthetic Fragrance.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="#">이용약관</a>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
+                    <a href="#">이용안내</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer Modal -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3><i data-lucide="shopping-bag"></i> 장바구니 (<span id="drawerCartCount">0</span>)</h3>
+            <button class="close-cart-btn" id="closeCartBtn"><i data-lucide="x"></i></button>
+        </div>
+        <div class="cart-free-shipping-bar">
+            <p id="freeShippingNotice">50,000원 이상 구매 시 <strong>무료배송</strong></p>
+            <div class="shipping-progress">
+                <div class="progress-bar" id="shippingProgress" style="width: 0%;"></div>
+            </div>
+        </div>
+        <div class="cart-drawer-items" id="cartDrawerItems">
+            <!-- Empty state or items dynamically rendered -->
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-total-row">
+                <span>총 주문금액</span>
+                <span class="total-price" id="cartTotalPrice">0원</span>
+            </div>
+            <p class="shipping-fee-text" id="shippingFeeText">배송비: 3,000원 (50,000원 이상 결제 시 무료)</p>
+            <button class="btn btn-primary btn-block" onclick="checkout()">주문 결제하기</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Quick View Product Modal -->
+    <div class="modal-backdrop" id="productModal">
+        <div class="modal-content product-detail-modal">
+            <button class="modal-close" id="closeProductModal"><i data-lucide="x"></i></button>
+            <div class="modal-body" id="modalProductContent">
+                <!-- Dynamically injected -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scent Finder Quiz Modal -->
+    <div class="modal-backdrop" id="quizModal">
+        <div class="modal-content quiz-modal-content">
+            <button class="modal-close" id="closeQuizModal"><i data-lucide="x"></i></button>
+            <div class="quiz-wizard" id="quizWizard">
+                <!-- Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <span class="step-indicator">STEP 01 / 03</span>
+                    <h3>석고방향제를 놓아둘 주 공간은 어디인가요?</h3>
+                    <div class="quiz-options-grid">
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(1, 'bedroom', '침실 & 휴식 공간')">
+                            <i data-lucide="moon"></i>
+                            <strong>침실 & 침대 헤드</strong>
+                            <span>포근하고 편안한 수면 힐링</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(1, 'study', '서재 & 작업실')">
+                            <i data-lucide="book-open"></i>
+                            <strong>서재 & 데스크</strong>
+                            <span>집중력을 높여주는 차분한 무드</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(1, 'living', '거실 & 현관 입구')">
+                            <i data-lucide="home"></i>
+                            <strong>거실 & 현관</strong>
+                            <span>집에 들어서는 순간 반기는 우아함</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(1, 'car', '차량 내부')">
+                            <i data-lucide="navigation"></i>
+                            <strong>차량 송풍구 클립</strong>
+                            <span>드라이브를 상쾌하게 만드는 센트</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="quiz-step" data-step="2">
+                    <span class="step-indicator">STEP 02 / 03</span>
+                    <h3>가장 끌리는 향기 무드는 무엇인가요?</h3>
+                    <div class="quiz-options-grid">
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(2, 'floral', '꽃과 정원의 포근함')">
+                            <i data-lucide="flower-2"></i>
+                            <strong>플로럴 & 화이트 머스크</strong>
+                            <span>풍성한 생화와 은은한 비누향</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(2, 'woody', '깊은 숲속의 고요함')">
+                            <i data-lucide="trees"></i>
+                            <strong>우디 & 샌달우드</strong>
+                            <span>차분하고 무게감 있는 숲의 정취</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(2, 'citrus', '상큼하고 청량한 리프레시')">
+                            <i data-lucide="sun"></i>
+                            <strong>시트러스 & 프레시 허브</strong>
+                            <span>지중해 햇살 같은 싱그러움</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(2, 'soft', '파우더리 & 린넨 코튼')">
+                            <i data-lucide="wind"></i>
+                            <strong>소프트 코튼 & 앰버</strong>
+                            <span>햇볕에 말린 깨끗한 린넨 향</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="quiz-step" data-step="3">
+                    <span class="step-indicator">STEP 03 / 03</span>
+                    <h3>원하시는 오브제 디자인 스타일은?</h3>
+                    <div class="quiz-options-grid">
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(3, 'sculpture', '예술적인 조각 오브제')">
+                            <i data-lucide="box"></i>
+                            <strong>클래식 조각상 & 릴리프</strong>
+                            <span>갤러리 같은 감성의 비너스/아치</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(3, 'minimal', '미니멀 모던 스톤')">
+                            <i data-lucide="circle"></i>
+                            <strong>오가닉 페블 & 플랫 타블렛</strong>
+                            <span>군더더기 없는 심플 미학</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(3, 'cute', '사랑스럽고 따뜻한 오브제')">
+                            <i data-lucide="smile"></i>
+                            <strong>테디베어 & 까멜리아</strong>
+                            <span>보는 것만으로 미소 짓게 되는 쉐입</span>
+                        </button>
+                        <button class="quiz-opt-btn" onclick="selectQuizOption(3, 'carclip', '실용적인 차량용 클립')">
+                            <i data-lucide="shield"></i>
+                            <strong>콤팩트 송풍구 클립형</strong>
+                            <span>감각적인 메탈릭 & 석고 매칭</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result View -->
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <!-- Result dynamically generated -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
